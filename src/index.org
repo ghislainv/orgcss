@@ -1,7 +1,22 @@
+# -*- mode: org -*-
+# -*- coding: utf-8 -*-
+# -*- org-src-preserve-indentation: t; org-edit-src-content: 0; -*-
+
+# ==============================================================================
+# author          :Ghislain Vieilledent
+# email           :ghislain.vieilledent@cirad.fr, ghislainv@gmail.com
+# web             :https://ecology.ghislainv.fr
+# license         :GPLv3
+# ==============================================================================
+
 #+TITLE: CSS for Org-exported HTML
 #+SUBTITLE: A Clean and Comfort Stylesheet
 
-#+HTML_HEAD: <link id="pagestyle" rel="stylesheet" type="text/css" href="org.css"/>
+#+OPTIONS: html-style:nil html-scripts:nil html5-fancy:t
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+HTML_DOCTYPE: html5
+#+HTML_HEAD: <link id="pagestyle" rel="stylesheet" type="text/css" href="css/org.css"/>
 
 # if you need code highlight from highlight.js, include the following
 # three lines, explained in the article.
@@ -200,7 +215,7 @@ Article abstract goes here.
 Your content goes here.
 
 # note the ignore tag
-,* Refrences                                                          :ignore:
+,* References                                                          :ignore:
 
 # prints out bibliograph, if any, with bibtex2html.  The first parameter is the
 # bibliograph file name without .bib extension, the second is the reference
@@ -473,3 +488,9 @@ Some styles are borrowed from the following projects.
 [fn:1] For note keeping, [[http://jblevins.org/projects/deft/][Deft]] with Org mode make a cute couple.
 
 [fn:2] A [[http://doc.norang.ca/org-mode.html][great article]] elaborates on this.
+
+* Environment setup and test :noexport:
+
+Local Variables:
+org-html-htmlize-output-type: "inline-css"
+End:
